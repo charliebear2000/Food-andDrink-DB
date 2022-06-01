@@ -1,6 +1,6 @@
 -- DROP DATABASE
-DROP DATABASE IF EXISTS foodAndDrinkDb;
+DROP DATABASE IF EXISTS food_and_drink_db;
 
 -- CREATE DATABASE
-CREATE DATABASE foodAndDrinkDb;
+CREATE DATABASE food_and_drink_db;
 
