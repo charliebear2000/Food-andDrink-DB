@@ -1,0 +1,9 @@
+<article class="post">
+    <div class="title">
+        <a herf="{{post_url}}" target="_blank">{{title}}</a>
+        <span>({{format_plural "point" vote_count}})</span>
+    </div>
+    <div class="meta">
+        {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
+    </div>
+</article>
