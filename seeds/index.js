@@ -1,10 +1,7 @@
 const seedUsers = require('./user-seeds');
 const seedPosts = require('./post-seeds');
-<<<<<<< HEAD
 const seedComments = require('./comment-seeds');
-=======
 const seedComments = require('./seeds/comment-seeds');
->>>>>>> develop
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {

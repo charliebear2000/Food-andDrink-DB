@@ -16,11 +16,22 @@
 
 {{#if posts.length}}
 <section>
-    <h2>Your Post</h2>
+    <h2> Your Posts </h2>
     <ol>
-        {{#each post as |post|}}
+        {{#each post as |post| }}
         <li>
-            {{> post-info post}}
+            {{> post-info post }}
+            <article class="post">
+            <div class="post-title">
+                <a href="/post/{{id}}">{{title}}</a>
+            </div>
+            <div>
+                <strong>Posted by {{user.username}} on {{format_date created_at}}</strong>
+            </div>
+            <div>
+                {{post_text}}
+            </div>
+            </article>
             <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
         </li>
         {{/each}}
