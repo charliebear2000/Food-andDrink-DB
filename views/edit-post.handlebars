@@ -1,15 +1,17 @@
 <article>
-    <a href="/dashboard"> &larr; Back to dashboard</a>
+    <a href="./dashboard.handlebars"> &larr; Back to dashboard</a>
     <h2>
         Edit Post
     </h2>
     <form class="edit-post-form">
         <div>
             <input name="post-title" type="text" value="{{post.title}}" />
-            <span> ({{format_url post.post_url}})</span>
+            {{!-- <span> ({{format_url post.post_url}})</span> --}}
         </div>
         <div>
-            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_pural "comment" post.comments.length}}</a>
+            <textarea name="post-text" type="text">{{post.post_text}}</textarea>
+
+            {{!-- <a href="/post/{{post.id}}">{{post.comments.length}} {{format_pural "comment" post.comments.length}}</a> --}}
         </div>
         <button type="submit">Save Post</button>
         <button type="button" class="delete-post-btn">Delete Post</button>
@@ -30,4 +32,4 @@
 
 <script src="/javasscript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>
+<script src="/public/javascript/comment.js"></script>

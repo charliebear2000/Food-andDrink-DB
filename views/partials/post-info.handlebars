@@ -1,9 +1,11 @@
 <article class="post">
-    <div class="title">
-        <a herf="{{post_url}}" target="_blank">{{title}}</a>
-        <span>({{format_url post_url}})</span>
+     <div class="title">
+        <a href="/post/{{id}}">{{<title}}</a>
+    </div>
+    <div class="body">
+        {{post_text}}
     </div>
     <div class="meta">
-        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        <strong>Posted by {{user.username}} on {{format_date created_at}}</strong>
     </div>
 </article>
