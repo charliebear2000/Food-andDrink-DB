@@ -18,7 +18,7 @@
 <section>
     <h2> Your Posts </h2>
     <ol>
-        {{#each post as |post| }}
+        {{#each posts as |post| }}
         <li>
             {{> post-info post }}
             <article class="post">
@@ -39,4 +39,4 @@
 </section>
 {{/if}}
 
-<script src="/javascript/add-post.js"></script>
+<script src="./public/javascript/add-post.js"></script>
