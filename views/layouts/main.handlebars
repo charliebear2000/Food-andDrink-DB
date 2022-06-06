@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food and Drink</title>
+    <title>The Recipe Pantry</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -12,15 +12,15 @@
     <div class="wrapper">
         <header>
             <h1>
-                <a href="/">Food and Drink</a>
+                <a href="/">The Recipe Pantry</a>
             </h1>
             <nav>
                 {{#if loggedIn}}
-                <a href="/">Homepage</a>
-                <a href="/dashboard">Dashboard</a>
+                <a href="/">Home</a>
+                <a href="/dashboard">My Pantry</a>
                 <button id="logout" class="btn-no-style">Logout</button>
                 {{else}}
-                <a href="/">Homepage</a>
+                <a href="/">Home</a>
                 <a href="/login">Login</a>
                 {{/if}}
             </nav>
@@ -29,7 +29,7 @@
             {{{ body }}}
         </main>
         <footer>
-            Thank you for visiting!!
+            The Recipe Pantry
         </footer>
     </div>
 
