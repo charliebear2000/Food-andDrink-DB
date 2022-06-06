@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Recipe Pantry</title>
+    <link href="https://fonts.googleapis.com/css?family=KoHo:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <h1>
-                <a href="/">The Recipe Pantry</a>
-            </h1>
-            <nav>
-                {{#if loggedIn}}
-                <a href="/">Home</a>
-                <a href="/dashboard">My Pantry</a>
-                <button id="logout" class="btn-no-style">Logout</button>
-                {{else}}
-                <a href="/">Home</a>
-                <a href="/login">Login</a>
-                {{/if}}
-            </nav>
+            {{!-- <nav> --}}
+                <div>
+                    <h2>
+                        <a class="cyan-text text-darken-3" href="/">The Recipe Pantry</a>
+                    </h2>
+                    {{#if loggedIn}}
+                    <ul class="left">
+                        <li><a class="cyan-text text-darken-3" href="/">Home</a></li>
+                        <li><a class="cyan-text text-darken-3" href="/dashboard">My Pantry</a></li>
+                        <li><button id="logout" class="btn-no-style">Logout</button></li>
+                    </ul>
+                    {{else}}
+                    <ul class="left">
+                        <li><a class="cyan-text text-darken-3" href="/">Home</a></li>
+                        <li><a class="cyan-text text-darken-3" href="/login">Login</a></li>
+                    </ul>
+                    {{/if}}
+                </div>
+            {{!-- </nav> --}}
         </header>
         <main>
             {{{ body }}}
@@ -36,6 +44,7 @@
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

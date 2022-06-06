@@ -1,7 +1,7 @@
-* {
+/* * {
     box-sizing: border-box;
   }
-  
+   */
   body, html {
     height: 100%;
     padding: 0;
@@ -12,17 +12,17 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    /* color: #225ca3; */
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #2a827a;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #009688;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +33,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #009688;
   }
   
   .post-list {
@@ -49,7 +49,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #009688;
   }
   
   textarea {
@@ -73,18 +73,20 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   header {
+    background-image: linear-gradient(to bottom right, #ee6e73, #f8bfbf, #ee6e73);
     border-bottom: 1px solid #ccc;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    font: white;
   }
   
-  header h1 {
+  /* header h1 {
     font-size: 1em;
-  }
+  } */
   
   main {
     flex: 1;
@@ -97,24 +99,24 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #0097a7;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
-    margin-left: 16px;
+    /* margin-left: 16px; */
   }
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #009688;
   }
   
   .delete-post-btn {
-    background-color: #d41414;
+    background-color: #009688;
   }
   
   .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #009688;
   }
   
   .post {
@@ -125,21 +127,12 @@
   .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: rgb(51, 50, 50);
   }
   
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
