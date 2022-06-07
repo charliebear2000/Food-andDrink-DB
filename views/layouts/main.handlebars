@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Recipe Pantry</title>
-    <link href="https://fonts.googleapis.com/css?family=KoHo:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        {{!-- <header> --}}
-            <nav>
-                <div>
-                    <a class="navtitle left" href="/">The Recipe Pantry</a>
+    <div class="page">
+        <header>
+            {{!-- <nav> --}}
+                <div class="row pantrybar">
+                    <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
                     {{#if loggedIn}}
-                    <ul class="right">
-                        <li><a class="navtabs" href="/">Home</a></li>
-                        <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
+                    <ul class="col s12 m6 right">
                         <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
+                        <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
+                        <li><a class="navtabs" href="/">Home</a></li>
                     </ul>
                     {{else}}
-                    <ul class="right">
-                        <li><a class="navtabs" href="/">Home</a></li>
+                    <ul class="col s12 m6 right">
                         <li><a class="navtabs" href="/login">Login</a></li>
+                        <li><a class="navtabs" href="/">Home</a></li>
                     </ul>
                     {{/if}}
                 </div>
-            </nav>
-        {{!-- </header> --}}
+            {{!-- </nav> --}}
+        </header>
         <main>
             {{{ body }}}
         </main>
