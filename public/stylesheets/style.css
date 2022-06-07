@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   background: url(../pantry.jpg) no-repeat center center fixed;
@@ -41,11 +45,46 @@ html {
   background-color: #fef2ec;
 }
 
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #f2f5ea;
+  /* background-color: #fef2ec; */
+}
+
+header {
+  background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
+  height: 150px;
+  justify-items: center;
+  position: relative;
+}
+
+/* nav {
+  background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
+  height: 150px;
+  justify-items: center;
+} */
+
+header ul li {
+  float: right;
+}
+
+.pantrybar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   /* color: #225ca3; */
   font-weight: bold;
-  transition: color 0.1s;
+  transition: color .1s;
 }
 
 a:hover {
@@ -53,29 +92,37 @@ a:hover {
 }
 
 .navtitle {
-  font-size: 32px;
+  font-family: 'abril-fatface regular 400', serif;
+  font-size: 40px;
   font-weight: bold;
-  padding-left: 20px;
-  padding-top: 50px;
+  /* padding-left: 20px;
+    padding-top: 50px; */
   color: #f4d0d0;
   text-shadow: #333 0px 0px 5px;
 }
 
 .navtabs {
+  font-family: 'abril-fatfaceregular 400', serif;
   font-size: 20px;
   color: #f4d0d0;
   text-shadow: #333 0px 0px 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.right {
-  padding-top: 50px;
-}
+
+/* .right {
+    padding-top: 50px;
+    float : right;
+  } */
 
 h5 {
+  font-family: 'abril-fatface', serif;
   color: #63032e;
 }
 
 .btn {
+  font-family: 'abril-fatface', serif;
   background-color: #a36387;
   color: #f2f5ea;
 }
@@ -86,12 +133,13 @@ h5 {
 }
 
 button {
+  font-family: 'abril-fatface', serif;
   /* background-color: #009688; */
   border: 0;
   padding: 1%;
   /* color: white; */
   font-weight: bold;
-  transition: background-color 0.1s;
+  transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -107,7 +155,7 @@ button:hover {
 
 textarea,
 input {
-  padding: 0.5%;
+  padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -123,7 +171,7 @@ textarea {
   min-height: 100px;
 }
 
-form > div {
+form>div {
   margin-bottom: 2%;
 }
 
@@ -137,7 +185,7 @@ form div {
   width: 50%;
 }
 
-.wrapper {
+.page {
   width: 100%;
   min-height: 100%;
   max-width: 1200px;
@@ -156,11 +204,6 @@ form div {
     font: white;
   } */
 
-nav {
-  background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
-  height: 150px;
-  justify-items: center;
-}
 
 /* header h1 {
     font-size: 1em;
@@ -174,6 +217,7 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
+  font-family: 'lato light 300', serif;
 }
 
 .btn-no-style {
@@ -244,9 +288,9 @@ main {
 }
 
 .comment .meta {
-  font-size: 90%;
-  margin-bottom: 0.5%;
-  opacity: 0.6;
+  font-size: 110%;
+  margin-bottom: .5%;
+  opacity: .6;
 }
 
 .new-post-form input {
