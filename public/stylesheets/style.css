@@ -8,6 +8,8 @@
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    /* background-color: #f2f5ea; */
+    background-color: #fef2ec;
   }
   
   a {
@@ -18,14 +20,47 @@
   }
   
   a:hover {
-    color: #2a827a;
+    color: #5c6d70;
+  }
+
+  .navtitle {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: #f4d0d0;
+    text-shadow: #333 0px 0px 5px;
+  }
+
+  .navtabs {
+    font-size: 20px;
+    color: #f4d0d0;
+    text-shadow: #333 0px 0px 5px;
+  }
+
+  .right {
+    padding-top: 50px;
+  }
+
+  h5 {
+    color: #63032e;
   }
   
+  .btn {
+    background-color: #a36387;
+    color: #f2f5ea;
+  }
+
+  .btn:hover {
+    background-color: #f4dbdb;
+    color: #a36387;
+  }
+
   button {
-    background-color: #009688;
+    /* background-color: #009688; */
     border: 0;
     padding: 1%;
-    color: white;
+    /* color: white; */
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -33,7 +68,7 @@
   }
   
   button:hover {
-    background-color: #009688;
+    background-color: #5c6d70;
   }
   
   .post-list {
@@ -63,6 +98,12 @@
   
   form label {
     display: block;
+    font-size: 14px;
+    color: #5c6d70;
+  }
+
+  form div {
+    width: 50%;
   }
   
   .wrapper {
@@ -74,14 +115,20 @@
     flex-direction: column;
   }
 
-  header {
-    background-image: linear-gradient(to bottom right, #ee6e73, #f8bfbf, #ee6e73);
+  /* header {
+    background-image: linear-gradient(to bottom right, #4c002b, #c29292, #4c002b);
     border-bottom: 1px solid #ccc;
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
     font: white;
+  } */
+
+  nav {
+    background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
+    height: 150px;
+    justify-items: center;
   }
   
   /* header h1 {
@@ -99,7 +146,8 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #0097a7;
+    color: #f4d0d0;
+    text-shadow: #333 0px 0px 5px;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -108,20 +156,30 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #009688;
+    color: #5c6d70;
   }
   
-  .delete-post-btn {
+  /* .delete-post-btn {
     background-color: #009688;
   }
   
   .delete-post-btn:hover {
     background-color: #009688;
-  }
+  } */
   
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+  }
+
+  .post-color {
+    /* color: #63032e; */
+    color: #0ca4a5;
+    text-decoration: underline;
+  }
+
+  .post-color2 {
+    color: #0b8484
   }
   
   .post .title span {
@@ -133,6 +191,7 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    color:#0b8484;
   }
   
   .comment-form {

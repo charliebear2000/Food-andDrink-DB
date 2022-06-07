@@ -12,27 +12,25 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            {{!-- <nav> --}}
+        {{!-- <header> --}}
+            <nav>
                 <div>
-                    <h2>
-                        <a class="cyan-text text-darken-3" href="/">The Recipe Pantry</a>
-                    </h2>
+                    <a class="navtitle left" href="/">The Recipe Pantry</a>
                     {{#if loggedIn}}
-                    <ul class="left">
-                        <li><a class="cyan-text text-darken-3" href="/">Home</a></li>
-                        <li><a class="cyan-text text-darken-3" href="/dashboard">My Pantry</a></li>
-                        <li><button id="logout" class="btn-no-style">Logout</button></li>
+                    <ul class="right">
+                        <li><a class="navtabs" href="/">Home</a></li>
+                        <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
+                        <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
                     </ul>
                     {{else}}
-                    <ul class="left">
-                        <li><a class="cyan-text text-darken-3" href="/">Home</a></li>
-                        <li><a class="cyan-text text-darken-3" href="/login">Login</a></li>
+                    <ul class="right">
+                        <li><a class="navtabs" href="/">Home</a></li>
+                        <li><a class="navtabs" href="/login">Login</a></li>
                     </ul>
                     {{/if}}
                 </div>
-            {{!-- </nav> --}}
-        </header>
+            </nav>
+        {{!-- </header> --}}
         <main>
             {{{ body }}}
         </main>

@@ -1,15 +1,15 @@
 <article>
-    <a class="cyan-text text-darken-3" href="./dashboard.handlebars"> &larr; Back to My Pantry</a>
-    <h2 class="cyan-text text-darken-3">
+    <a class="post-color2" href="/dashboard"> &larr; Back to My Pantry</a>
+    <h5>
         Edit Post
-    </h2>
+    </h5>
     <form class="edit-post-form">
         <div>
-            <input class="cyan-text text-darken-3" name="post-title" type="text" value="{{post.title}}" />
+            <input class="post-color" name="post-title" type="text" value="{{post.title}}" />
             <span> ({{format_url post.post_url}})</span>
         </div>
         <div>
-            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+            <a class="post-color2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
         </div>
         <button type="submit" class="waves-effect waves-light btn z-depth-4">Save Post</button>
         <button type="button" class="delete-post-btn waves-effect waves-light btn z-depth-4">Delete Post</button>
