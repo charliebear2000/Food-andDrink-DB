@@ -4,38 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food and Drink</title>
+    <title>The Recipe Pantry</title>
+    <link href="https://fonts.googleapis.com/css?family=KoHo:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Food and Drink</a>
-            </h1>
+        {{!-- <header> --}}
             <nav>
-                {{#if loggedIn}}
-                <a href="/">Homepage</a>
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout" class="btn-no-style">Logout</button>
-                {{else}}
-                <a href="/">Homepage</a>
-                <a href="/login">Login</a>
-                {{/if}}
+                <div>
+                    <a class="navtitle left" href="/">The Recipe Pantry</a>
+                    {{#if loggedIn}}
+                    <ul class="right">
+                        <li><a class="navtabs" href="/">Home</a></li>
+                        <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
+                        <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
+                    </ul>
+                    {{else}}
+                    <ul class="right">
+                        <li><a class="navtabs" href="/">Home</a></li>
+                        <li><a class="navtabs" href="/login">Login</a></li>
+                    </ul>
+                    {{/if}}
+                </div>
             </nav>
-        </header>
+        {{!-- </header> --}}
         <main>
             {{{ body }}}
         </main>
         <footer>
-            Thank you for visiting!!
+            The Recipe Pantry
         </footer>
     </div>
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

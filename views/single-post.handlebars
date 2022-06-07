@@ -1,15 +1,18 @@
+<a class="post-color2" href="/dashboard"> &larr; Back to My Pantry</a>
+</br>
 {{> post-info post}}
 
-{{#if logginIn}}
+{{#if loggedIn}}   
 <form class="comment-form">
     <div>
         <textarea name="comment-body"></textarea>
     </div>
 
     <div>
-        <button type="submit">Add Your Comments Here!</button>
+        <button class="waves-effect waves-light btn z-depth-4" type="submit">Add Comment</button>
     </div>
 </form>
+
 {{/if}}
 
 {{> comments post.comments}}

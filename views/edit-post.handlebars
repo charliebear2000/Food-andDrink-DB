@@ -1,20 +1,18 @@
 <article>
-    <a href="./dashboard.handlebars"> &larr; Back to Dashboard</a>
-    <h2>
+    <a class="post-color2" href="/dashboard"> &larr; Back to My Pantry</a>
+    <h5>
         Edit Post
-    </h2>
+    </h5>
     <form class="edit-post-form">
         <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
-            {{!-- <span> ({{format_url post.post_url}})</span> --}}
+            <input class="post-color" name="post-title" type="text" value="{{post.title}}" />
+            <span> ({{format_url post.post_url}})</span>
         </div>
         <div>
-            <textarea name="post-text" type="text">{{post.post_text}}</textarea>
-
-            {{!-- <a href="/post/{{post.id}}">{{post.comments.length}} {{format_pural "comment" post.comments.length}}</a> --}}
+            <a class="post-color2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
         </div>
-        <button type="submit">Save Post</button>
-        <button type="button" class="delete-post-btn">Delete Post</button>
+        <button type="submit" class="waves-effect waves-light btn z-depth-4">Save Post</button>
+        <button type="button" class="delete-post-btn waves-effect waves-light btn z-depth-4">Delete Post</button>
     </form>
 </article>
 
@@ -24,7 +22,7 @@
     </div>
 
     <div>
-        <button type="submit">Add Comment</button>
+        <button type="submit" class="waves-effect waves-light btn z-depth-4">Add Comment</button>
     </div>
 </form>
 

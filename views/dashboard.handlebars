@@ -1,42 +1,33 @@
 <section>
-    <h2> Create New Post! </h2>
+    <h5> Add New Recipe</h5>
 
-<form class="new-post-form">
-    <div>
-        <label for="post-title">Title</label>
-        <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-        <label for="post-text">Link</label>
-        <input id="post-url" name="post-url" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
+    <form class="new-post-form">
+        <div>
+            <label for="post-title">Title</label>
+            <input id="post-title" name="post-title" />
+        </div>
+        <div>
+            <label for="post-url">Link</label>
+            <input id="post-url" name="post-url" />
+        </div>
+        <button type="submit" class="waves-effect waves-light btn z-depth-4">Create</button>
+    </form>
 </section>
 
 {{#if posts.length}}
 <section>
-    <h2> Your Posts </h2>
+    <h5> My Recipes </h5>
     <ol>
         {{#each posts as |post| }}
         <li>
             {{> post-info post }}
             <article class="post">
-            <div class="post-title">
-                <a href="/post/{{id}}">{{title}}</a>
-            </div>
-            <div>
-                <strong>Posted by {{user.username}} on {{format_date created_at}}</strong>
-            </div>
-            <div>
-                {{post_text}}
-            </div>
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
             </article>
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
         </li>
         {{/each}}
     </ol>
 </section>
 {{/if}}
 
-<script src="./public/javascript/add-post.js"></script>
+<script src="/javascript/add-post.js"></script>
