@@ -14,7 +14,7 @@ var options = {
 };
 
 anime
-  .timeline({ loop: true })
+  .timeline({ loop: false })
   .add({
     targets: ".text-animation .one",
     opacity: options.opacityIn,
