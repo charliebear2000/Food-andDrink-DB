@@ -1,10 +1,13 @@
 <div class="hero">
-<div class="text-animation">
-  <span class="one">The</span>
-  <span class="two">Recipe</span>
-  <span class="three"> Pantry</span>
-</div>
+  <div class="text-animation">
+    <span class="one">The</span>
+    <span class="two">Recipe</span>
+    <span class="three"> Pantry</span>
+  </div>
 </div>
 <script src="./javascript/anime.min.js"></script>
 
 <script src="./javascript/index.js"></script>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}

@@ -12,46 +12,41 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
-{{#if loggedIn}}
+<body>
+    <div class="page">
+        <header>
+            <div class="row pantrybar">
+                
+                {{#if loggedIn}}
+                <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
+                <ul class="col s12 m6 right">
+                    <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
+                    <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
+                    <li><a class="navtabs" href="/homepage">Home</a></li>
+                </ul>
+                {{else}}
 
-<body style="background: none">
-    {{else}}
+                <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
+                <ul class="col s12 m6 right">
+                    <li><a class="navtabs" href="/login">Login</a></li>
+                    <li><a class="navtabs" href="/homepage">Home</a></li>
+                </ul>
+                {{/if}}
+            </div>
+        </header>
+        <main>
 
-    <body>
-        {{/if}}
-        <div class="page">
-            <header>
-                <div class="row pantrybar">
-                    <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
-                    {{#if loggedIn}}
-                    <ul class="col s12 m6 right">
-                        <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
-                        <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
-                        <li><a class="navtabs" href="/homepage">Home</a></li>
-                    </ul>
-                    {{else}}
-                    
+            {{{body}}}
+        </main>
+        <footer>
+            The Recipe Pantry
+        </footer>
+    </div>
 
-                    <ul class="col s12 m6 right">
-                        <li><a class="navtabs" href="/login">Login</a></li>
-                        <li><a class="navtabs" href="/homepage">Home</a></li>
-                    </ul>
-                    {{/if}}
-                </div>
-            </header>
-            <main>
-
-                {{{body}}}
-            </main>
-            <footer>
-                The Recipe Pantry
-            </footer>
-        </div>
-
-        {{#if loggedIn}}
-        <script src="/javascript/logout.js"></script>
-        {{/if}}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </body>
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 
 </html>

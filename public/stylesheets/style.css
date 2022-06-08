@@ -116,6 +116,7 @@ h5 {
   font-family: 'abril-fatface', serif;
   background-color: #a36387;
   color: #f2f5ea;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -125,13 +126,6 @@ h5 {
 
 button {
   font-family: 'abril-fatface', serif;
-  /* background-color: #009688; */
-  border: 0;
-  padding: 1%;
-  /* color: white; */
-  font-weight: bold;
-  transition: background-color .1s;
-  cursor: pointer;
   border-radius: 5px;
 }
 
@@ -185,21 +179,6 @@ form div {
   display: flex;
   flex-direction: column;
 }
-
-/* header {
-    background-image: linear-gradient(to bottom right, #4c002b, #c29292, #4c002b);
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
-    font: white;
-  } */
-
-
-/* header h1 {
-    font-size: 1em;
-  } */
 
 main {
   flex: 1;
@@ -270,9 +249,9 @@ section, form {
   color: #0b8484;
 }
 
-.comment-form {
+/* .comment-form {
   margin-bottom: 5%;
-}
+} */
 
 .comment {
   padding: 1%;
