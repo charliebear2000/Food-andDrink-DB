@@ -24,13 +24,13 @@
 
 #### Applications:
 
-- [Anime.js]
+- [Anime.js](https://animejs.com/documentation/)
 - [Pcrypt Package](https://www.npmjs.com/package/bcrypt)
 - [Dotenv Package](https://www.npmjs.com/package/dotenv)
 - [Express.js](https://expressjs.com/en/starter/installing.html)
 - [Express-Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html#if)
 - [Express-Session](https://www.npmjs.com/package/express-session)
-- [Materialize-CSS]
+- [Materialize-CSS](https://materializecss.com/)
 - [MySQL2](https://www.mysql.com/)
 - [Sequelize](https://sequelize.org/)
 
