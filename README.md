@@ -25,7 +25,7 @@
 #### Applications:
 
 - [Anime.js](https://animejs.com/documentation/)
-- [Pcrypt Package](https://www.npmjs.com/package/bcrypt)
+- [Bcrypt Package](https://www.npmjs.com/package/bcrypt)
 - [Dotenv Package](https://www.npmjs.com/package/dotenv)
 - [Express.js](https://expressjs.com/en/starter/installing.html)
 - [Express-Handlebars](https://handlebarsjs.com/guide/builtin-helpers.html#if)
@@ -36,11 +36,11 @@
 
 #### Sites
 
-[Insomnia](https://insomnia.rest/)
+- [Insomnia](https://insomnia.rest/)
 
-[Heroku](www.heroku.com)
+- [Heroku](www.heroku.com)
 
-[REPO]()
+- [REPO]()
 
 ---
 
