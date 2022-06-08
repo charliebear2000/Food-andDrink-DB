@@ -6,13 +6,21 @@
 var options = {
   opacityIn: [0, 1],
   scaleIn: [0.2, 1],
+  scaleOut: 1,
+  durationIn: 800,
+  durationOut: 600,
+  delay: 500,
+  easing: "easeInOutExpo",
+};
+var options = {
+  opacityIn: [0, 1],
+  scaleIn: [0.2, 1],
   scaleOut: 3,
   durationIn: 800,
   durationOut: 600,
   delay: 500,
-  easing: "easeInExpo",
+  easing: "easeInOutExpo",
 };
-
 anime
   .timeline({ loop: false })
   .add({
@@ -56,10 +64,29 @@ anime
     easing: options.easing,
     duration: options.durationOut,
     delay: options.delay,
+    translateX: 750,
   })
+
   .add({
-    targets: ".text-animation",
-    opacity: 0,
-    duration: 500,
-    delay: 500,
+    targets: ".text-animation .four",
+    opacity: options.opacityIn,
+    scale: options.scaleIn,
+    duration: options.durationIn,
+  })
+
+  .add({
+    targets: ".text-animation .four",
+    opactiy: 0,
+    // scale: options.scaleOut,
+    easing: options.easing,
+    duration: options.durationOut,
+    delay: options.delay,
   });
+
+// .timeline({ loop: true });
+// .add({
+//   targets: ".text-animation",
+//   opacity: 0,
+//   duration: 500,
+//   delay: 500,
+// });
