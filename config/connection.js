@@ -10,6 +10,11 @@ const sequelize = process.env.JAWSDB_URL
       dialectOptions: {
         decimalNumbers: true,
       },
+      pool: {
+        max : 10,
+        min : 0,
+        idle: 20
+      },
     });
 
 module.exports = sequelize;
