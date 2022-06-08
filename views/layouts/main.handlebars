@@ -6,7 +6,7 @@
     <title>The Recipe Pantry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Abril+Fatface&family=Lato:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
@@ -16,17 +16,14 @@
     <div class="page">
         <header>
             <div class="row pantrybar">
-                
-                {{#if loggedIn}}
                 <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
+                {{#if loggedIn}}
                 <ul class="col s12 m6 right">
                     <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
                     <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
                     <li><a class="navtabs" href="/homepage">Home</a></li>
                 </ul>
                 {{else}}
-
-                <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
                 <ul class="col s12 m6 right">
                     <li><a class="navtabs" href="/login">Login</a></li>
                     <li><a class="navtabs" href="/homepage">Home</a></li>
