@@ -300,9 +300,10 @@ form {
 }
 
 footer {
+  font-family: 'Libre Barcode 39 Text', cursive; 
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
   padding: 1%;
-  font-size: 110%;
+  font-size: 200%;
 }
