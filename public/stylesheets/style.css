@@ -27,9 +27,10 @@
   font-weight: 800;
   color: #eee;
   width: 100vw;
-  height: 200px;
+  height: 225px;
   text-align: center;
   line-height: normal;
+  background: rgba(204, 204, 204, 0.7);
   /* overflow: hidden; */
 }
 
@@ -97,7 +98,6 @@ a:hover {
   padding-left: 20px;
   color: #f4d0d0;
   text-shadow: #333 0px 0px 5px;
-  
 }
 
 .navtabs {
@@ -314,7 +314,7 @@ section {
 }
 
 footer {
-  font-family: 'Libre Barcode 39 Text', cursive; 
+  font-family: "Libre Barcode 39 Text", cursive;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
