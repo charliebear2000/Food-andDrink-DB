@@ -12,7 +12,7 @@
 
 ## Description
 
-Think of this as your online recipe book that is your one stop shop. 
+Welcome to the Recipe Pantry, a site where you can store all of your favorite recipes in one convenient and user friendly location. Say goodbye to the stress of forgetting where the recipe was that you had planned to make the family for dinner, and say hello to your new digital recipe scrapbook. 
 
 
 ## Installation
