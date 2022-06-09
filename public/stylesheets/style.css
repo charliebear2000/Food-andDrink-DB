@@ -126,6 +126,10 @@ h5 {
   font-weight: bold;
 }
 
+.login-form, .signup-form {
+  padding: 2% 4%;
+}
+
 .btn:hover {
   background-color: #f4dbdb;
   color: #a36387;
