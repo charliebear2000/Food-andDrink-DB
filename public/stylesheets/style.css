@@ -6,14 +6,20 @@
   height: 100vh;
   background: url(../pantry.jpg) no-repeat center center fixed;
   background-size: cover;
-  font-family: "Fredoka One", sans-serif;
+  /* font-family: "Fredoka One", sans-serif; */
+  font-family: "abril-fatface regular 400", serif;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #paragraph {
-  font-size: 30px;
+  font-family: "abril-fatface regular 400", serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-style: italic;
 }
 .text-animation {
   position: relative;
@@ -88,10 +94,10 @@ a:hover {
   font-family: "abril-fatface regular 400", serif;
   font-size: 40px;
   font-weight: bold;
-  /* padding-left: 20px;
-    padding-top: 50px; */
+  padding-left: 20px;
   color: #f4d0d0;
   text-shadow: #333 0px 0px 5px;
+  
 }
 
 .navtabs {
@@ -213,8 +219,11 @@ main {
   font-family: "lato light 300", serif;
 }
 
-section,
-form {
+.single-post {
+  padding: 2% 4%;
+}
+
+section {
   padding: 2% 4%;
 }
 
@@ -254,6 +263,7 @@ form {
   /* color: #63032e; */
   color: #0ca4a5;
   text-decoration: underline;
+  font-size: 125%;
 }
 
 .post-color2 {
@@ -262,7 +272,7 @@ form {
 
 .post .title span {
   font-style: italic;
-  font-size: 90%;
+  font-size: 110%;
   color: rgb(51, 50, 50);
 }
 
@@ -270,6 +280,10 @@ form {
   display: block;
   margin: -1.5% 0 2% 0;
   color: #0b8484;
+}
+
+.pantry-posts {
+  padding-left: 13px;
 }
 
 /* .comment-form {
