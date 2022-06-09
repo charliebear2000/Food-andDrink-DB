@@ -25,7 +25,7 @@
   position: relative;
   font-size: 80px;
   font-weight: 800;
-  color: #eee;
+  color: rgb(235, 227, 227);
   width: 100vw;
   height: 225px;
   text-align: center;
@@ -58,7 +58,7 @@ html {
 
 header {
   background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
-  height: 150px;
+  height: 100px;
   justify-items: center;
   position: relative;
 }
