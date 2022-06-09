@@ -17,13 +17,10 @@
 {{#if posts.length}}
 <section>
     <h5> My Recipes </h5>
-    <ol>
+    <ol class="pantry-posts">
         {{#each posts as |post| }}
         <li>
             {{> post-info post }}
-            <article class="post">
-                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
-            </article>
         </li>
         {{/each}}
     </ol>
