@@ -8,10 +8,13 @@ const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 
 const app = express();
+
+// open the port for the server
 const PORT = process.env.PORT || 3001;
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+// setting up the session cookie
 const sess = {
   secret: 'Super secret secret',
   cookie: {
@@ -29,6 +32,7 @@ const sess = {
 
 app.use(session(sess));
 
+// middleware for handlebars files
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 

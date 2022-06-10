@@ -101,6 +101,7 @@ router.post("/login", (req, res) => {
   });
 });
 
+// user logout
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -111,8 +112,7 @@ router.post("/logout", (req, res) => {
   }
 });
 
-// PUT /api/users/1
-
+// update user info
 router.put("/:id", (req, res) => {
   User.update(req.body, {
     individualHooks: true,
