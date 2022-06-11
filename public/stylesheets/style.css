@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
 }
+
 #paragraph {
   font-family: "abril-fatface regular 400", serif;
   font-weight: bold;
@@ -20,6 +21,22 @@
   padding-left: 15px;
   padding-right: 15px;
   font-style: italic;
+}
+@media screen and (max-width: 400px) {
+  #paragraph {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  #paragraph {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #paragraph {
+    font-size: 15px;
+  }
 }
 .text-animation {
   position: relative;
@@ -33,7 +50,11 @@
   background: rgba(204, 204, 204, 0.7);
   /* overflow: hidden; */
 }
-
+@media screen and (max-width: 400px) {
+  .text-animation {
+    height: 235px;
+  }
+}
 .text-animation span {
   position: absolute;
   top: 0;
@@ -45,8 +66,7 @@
   letter-spacing: 5px;
 }
 
-body,
-html {
+body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -126,7 +146,8 @@ h5 {
   font-weight: bold;
 }
 
-.login-form, .signup-form {
+.login-form,
+.signup-form {
   padding: 2% 4%;
 }
 
