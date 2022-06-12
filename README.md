@@ -17,11 +17,15 @@ Welcome to the Recipe Pantry, a site where you can store all of your favorite re
 
 ## Installation
 
-To install this application, you will need to clone the repository from GitHub on to your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: Node.js, Bcrypt, Dotenv, Express. JS, Handlebars, MYSQL 2 and Sequelize. After you install the modules, run mysql -u root -p  in your terminal and add the schema. Enter source /db.schemasql to run and select the scheme.sql file. After you have installed the modules and have the mysql running then enter run npm start into your terminal. 
+To install this application on your local computer, you will need to clone the repository from GitHub on to your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: Node.js, Bcrypt, Dotenv, Express. JS, Handlebars, MYSQL 2 and Sequelize. After you install the modules, run mysql -u root -p  in your terminal and add the schema. Enter source /db.schemasql to run and select the scheme.sql file. After you have installed the modules and have the mysql running then enter run npm start into your terminal. 
 
 ## Usage
 
-This application will be run from Heroku at the following URL:________. 
+This application will be run from Heroku at the following URL:
+
+![The Recipe Pantry](https://shrouded-gorge-64455.herokuapp.com/homepage)
+
+When you open The Recipe Pantry site click on the "Login" button create a username a password. Once you have done that you can start saving your favorite food and drink recipes. You can also comment on your recipes and other users. 
 
 ## Technologies Used:
 
@@ -43,7 +47,7 @@ This application will be run from Heroku at the following URL:________.
 
 - [Heroku](www.heroku.com)
 
-- [REPO]()
+- [REPO](https://github.com/charliebear2000/Food-andDrink-DB)
 
 ---
 
@@ -55,9 +59,11 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ## Screenshot
 
-[Demo Video]()
+[Demo Video](./public/images/GIF%20Recipe%20Pantry.webm)
 
-![Screenshot]()
+![Screenshot 1](./public/images/Screenshot%201.PNG)
+
+![Screenshot 2](./public/images/Screenshot%202.PNG)
 
 ### Created and maintained by:
 
