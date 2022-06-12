@@ -1,22 +1,24 @@
-{{!-- <article>
-    <a class="post-color2" href="/dashboard"> &larr; Back to My Pantry</a>
-    <h5>
-        Edit Post
-    </h5>
-    <form class="edit-post-form">
-        <div>
+<article class="delete-post">
+    <a class="post-color2 bck" href="/dashboard"> &larr; Back to My Pantry</a>
+    <h4>
+        Are you sure you want to delete this recipe?
+    </h4>
+    {{!-- <form class="edit-post-form"> --}}
+        <div class="recipe-info">
             <input class="post-color" name="post-title" type="text" value="{{post.title}}" />
             <span> ({{format_url post.post_url}})</span>
         </div>
-        <div>
-            <a class="post-color2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+        <div class="recipe-info">
+            <a class="post-color2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment"
+                post.comments.length}}</a>
         </div>
-        <button type="submit" class="waves-effect waves-light btn z-depth-4">Save Post</button>
+        {{!-- <button type="submit" class="waves-effect waves-light btn z-depth-4">Save Post</button> --}}
         <button type="button" class="delete-post-btn waves-effect waves-light btn z-depth-4">Delete Post</button>
-    </form>
+        {{!--
+    </form> --}}
 </article>
 
-<form class="comment-form">
+{{!-- <form class="comment-form">
     <div>
         <textarea name="comment-body"></textarea>
     </div>
@@ -26,8 +28,8 @@
     </div>
 </form>
 
-{{> comments post.comments}}
+{{> comments post.comments}} --}}
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script> --}}
+{{!-- <script src="/javascript/comment.js"></script> --}}

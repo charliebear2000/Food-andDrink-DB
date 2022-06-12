@@ -6,7 +6,8 @@
     <title>The Recipe Pantry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Abril+Fatface&family=Lato:wght@300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Abril+Fatface&family=Lato:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <!-- Bootstrap CSS -->
@@ -15,24 +16,24 @@
 
 <body>
     <div class="page">
-        <header>
-            <div class="row pantrybar">
-                <a class="col s12 m6 navtitle left" href="/">The Recipe Pantry</a>
+        <header class="row">
+            <a class="col s12 m6 l6 left navtitle" href="/">The Recipe Pantry</a>
+            <nav class="col s12 m6 l6">
+                <ul class="valign-wrapper right">
                 {{#if loggedIn}}
-                <ul class="col s12 m6 right">
-                    <li><a class="navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
-                    <li><a class="navtabs" href="/dashboard">My Pantry</a></li>
-                    <li><a class="navtabs" href="/homepage">Home</a></li>
-                </ul>
+                {{!-- <div class="valign-wrapper right"> --}}
+                    <li><a class="right navtabs"><button id="logout" class="btn-no-style">Logout</button></a></li>
+                    <li><a class="right navtabs" href="/dashboard">My Pantry</a></li>
+                    <li><a class="right navtabs" href="/homepage">Home</a></li>
+                {{!-- </div> --}}
                 {{else}}
-                <!-- Navigation Bar -->
-                <ul class="col s12 m6 right">
-                    <li><a class="navtabs" href="/login">Login</a></li>
-                    <li><a class="navtabs" href="/homepage">Home</a></li>
-                </ul>
+                    <li><a class="right navtabs" href="/login">Login</a></li>
+                    <li><a class="right navtabs" href="/homepage">Home</a></li>
                 {{/if}}
-            </div>
+                </ul>
+            </nav>
         </header>
+
         <main>
             <!-- Main content will go here -->
 
