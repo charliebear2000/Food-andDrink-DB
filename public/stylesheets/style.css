@@ -6,21 +6,21 @@
   height: 100vh;
   background: url(../pantry.jpg) no-repeat center center fixed;
   background-size: cover;
-  /* font-family: "Fredoka One", sans-serif; */
   font-family: "abril-fatface regular 400", serif;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: rgb(16, 16, 16) 0px 0px 2px;
 }
 
 #paragraph {
   font-family: "abril-fatface regular 400", serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 36px;
   padding-left: 15px;
   padding-right: 15px;
-  font-style: italic;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 400px) {
   #paragraph {
