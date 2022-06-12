@@ -2,7 +2,13 @@
 <ol class="post-list">
     {{#each posts as |post|}}
     <li>
-        {{> post-info post }}
+        {{!-- {{> post-info post }} --}}
+        <div>
+            {{> post-info post }}
+        </div>
+        <div class="post-user">
+            <strong>Posted by {{user.username}} on {{format_date created_at}}</strong>
+        </div>
     </li>
     {{/each}}
 </ol>

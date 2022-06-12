@@ -1,6 +1,6 @@
 <!-- to store user appplications with ability to edit or delete infomation-->
 <section>
-    <h5> Add New Recipe</h5>
+    <h4> Add New Recipe</h4>
 
     <form class="new-post-form">
         <div>
@@ -21,8 +21,9 @@
     <h5> My Recipes </h5>
     <ol class="pantry-posts">
         {{#each posts as |post| }}
-        <li>
+        <li class="recipe-info">
             {{> post-info post }}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Delete post</a>
         </li>
         {{/each}}
     </ol>
