@@ -23,7 +23,7 @@ To install this application on your local computer, you will need to clone the r
 
 This application will be run from Heroku at the following URL:
 
-![The Recipe Pantry](https://shrouded-gorge-64455.herokuapp.com/homepage)
+[The Recipe Pantry](https://shrouded-gorge-64455.herokuapp.com/homepage)
 
 When you open The Recipe Pantry site click on the "Login" button create a username a password. Once you have done that you can start saving your favorite food and drink recipes. You can also comment on your recipes and other users. 
 
@@ -59,7 +59,7 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ## Screenshot
 
-[Demo Video](./public/images/GIF%20Recipe%20Pantry.webm)
+[CLick Here to Watch our Demo Video](./public/images/GIF%20Recipe%20Pantry.webm)
 
 ![Screenshot 1](./public/images/Screenshot%201.PNG)
 
