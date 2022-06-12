@@ -20,7 +20,7 @@ that you had planned to make, and say hello to your new digital recipe scrapbook
 
 ## Installation
 
-To install this application on your local computer, you will need to clone the repository from GitHub on to your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: Node.js, Bcrypt, Dotenv, Express. JS, Handlebars, MYSQL 2 and Sequelize. After you install the modules, run mysql -u root -p  in your terminal and add the schema. Enter source /db.schemasql to run and select the scheme.sql file. After you have installed the modules and have the mysql running then enter run npm start into your terminal. 
+To install this application on your local computer, you will need to clone the repository from GitHub on to your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: Node.js, Bcrypt, Dotenv, Express. JS, Handlebars, Anime.js, MYSQL 2 and Sequelize. After you install the modules, run mysql -u root -p  in your terminal and add the schema. Enter source /db.schemasql to run and select the scheme.sql file. After you have installed the modules and have the mysql running then enter run npm start into your terminal. 
 
 ---
 
