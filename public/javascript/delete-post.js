@@ -15,7 +15,7 @@ async function deleteFormHandler(event) {
       "Content-Type": "application/json",
     },
   });
-  //If/else statement telling the browser what to do with the API fetch
+  //If/else statement telling the browser what to do with the API fetch. Update the user's dashboard page if the post is successfully deleted
   if (response.ok) {
     document.location.replace("/dashboard/");
   } else {

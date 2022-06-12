@@ -1,4 +1,4 @@
-<!-- to store user appplications with ability to edit or delete infomation-->
+<!-- to store user appplications with ability to delete infomation-->
 <section>
     <h4> Add New Recipe</h4>
 
@@ -15,15 +15,15 @@
     </form>
 </section>
 
-<!-- goes to a list of recipes that the user can see -->
+<!-- goes to a list of the users recipes that the user can see -->
 {{#if posts.length}}
 <section>
-    <h5> My Recipes </h5>
+    <h4> My Recipes </h4>
     <ol class="pantry-posts">
         {{#each posts as |post| }}
         <li class="recipe-info">
             {{> post-info post }}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Delete post</a>
+            <a href="/dashboard/edit/{{post.id}}" class="delete-link">Delete post</a>
         </li>
         {{/each}}
     </ol>

@@ -22,6 +22,7 @@ async function loginFormHandler(event) {
     }
   }
 }
+
 //Creating a function that allows a new user to sign up for our site
 async function signupFormHandler(event) {
   event.preventDefault();
@@ -29,7 +30,7 @@ async function signupFormHandler(event) {
   const username = document.querySelector("#username-signup").value.trim();
   const email = document.querySelector("#email-signup").value.trim();
   const password = document.querySelector("#password-signup").value.trim();
-  //Telling the browser to add the user inputted information to the database after turning it into JSON input
+  //Telling the browser to add the user's input information to the database after turning it into JSON format
   if (username && email && password) {
     const response = await fetch("/api/users", {
       method: "post",
@@ -48,10 +49,12 @@ async function signupFormHandler(event) {
     }
   }
 }
-//Calling the log in function once the log in button click event occurs
+
+//Calling the login function once the login button click event occurs
 document
   .querySelector(".login-form")
   .addEventListener("submit", loginFormHandler);
+
 //Calling the sign up function once the email, password, and username information is entered and the submit button is clicked
 document
   .querySelector(".signup-form")

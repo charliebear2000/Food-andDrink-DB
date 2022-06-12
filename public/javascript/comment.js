@@ -21,7 +21,7 @@ async function commentFormHandler(event) {
         "Content-Type": "application/json",
       },
     });
-    //telling the browser what to do with the information retrieved by the API call
+    //telling the browser what to do with the information retrieved by the API call. 
     if (response.ok) {
       document.location.reload();
     } else {

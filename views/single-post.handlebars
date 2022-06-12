@@ -3,25 +3,19 @@
     <a class="post-color2 bck" href="/dashboard"> &larr; Back to My Pantry</a>
     </br>
     {{> post-info post}}
-
     {{#if loggedIn}}
     <form class="comment-form">
         <div>
             <textarea name="comment-body"></textarea>
         </div>
-
         <div>
             <button class="waves-effect waves-light btn z-depth-4" type="submit">Add Comment</button>
-            {{!-- <button type="button" class="delete-post-btn waves-effect waves-light btn z-depth-4">Delete Post</button> --}}
         </div>
     </form>
-
     {{/if}}
-
+    <!-- Displays the list of comments for that single post -->
     {{> comments post.comments}}
     {{#if loggedIn}}
-
     <script src="/javascript/comment.js"></script>
-
     {{/if}}
 </div>

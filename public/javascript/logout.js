@@ -1,4 +1,4 @@
-//Creating a function to handle logging a user out and redirecting them to the home page
+//Creating a function to handle logging a user out and redirecting them to the landing page
 async function logout() {
   const response = await fetch("/api/users/logout", {
     method: "post",
