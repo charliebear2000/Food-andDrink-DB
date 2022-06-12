@@ -67,6 +67,8 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ![Screenshot 1](./public/images/Screenshot%201.PNG)
 
+---
+
 ![Screenshot 2](./public/images/Screenshot%202.PNG)
 
 ---
