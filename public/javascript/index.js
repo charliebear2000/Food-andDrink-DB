@@ -2,7 +2,7 @@
 var options = {
   opacityIn: [0, 1],
   scaleIn: [0.2, 1],
-  scaleOut: 3,
+  scaleOut: 0,
   durationIn: 800,
   durationOut: 600,
   delay: 500,
@@ -56,7 +56,6 @@ anime
     easing: options.easing,
     duration: options.durationOut,
     delay: options.delay,
-    translateX: 750,
   })
   //Setting the entry animation of the descriptive paragraph of our site and
   //intentionally leaving out the scaleOut action so that the paragraph remains on the screen
@@ -66,7 +65,6 @@ anime
     scale: options.scaleIn,
     duration: options.durationIn,
   })
-
   .add({
     targets: ".text-animation .four",
     opactiy: 0,

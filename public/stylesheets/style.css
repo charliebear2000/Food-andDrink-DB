@@ -1,69 +1,6 @@
+/* Basic styling for the site */
 * {
   box-sizing: border-box;
-}
-
-.hero {
-  height: 100vh;
-  background: url(../pantry.jpg) no-repeat center center fixed;
-  background-size: cover;
-  font-family: "abril-fatface regular 400", serif;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: rgb(16, 16, 16) 0px 0px 2px;
-}
-
-#paragraph {
-  font-family: "abril-fatface regular 400", serif;
-  font-weight: bold;
-  font-size: 36px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-transform: capitalize;
-}
-@media screen and (max-width: 400px) {
-  #paragraph {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 1087px) {
-  #paragraph {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #paragraph {
-    font-size: 15px;
-  }
-}
-.text-animation {
-  position: relative;
-  font-size: 80px;
-  font-weight: 800;
-  color: rgb(157, 34, 99);
-  width: 100vw;
-  height: 225px;
-  text-align: center;
-  line-height: normal;
-  background: rgba(204, 204, 204, 0.7);
-  /* overflow: hidden; */
-}
-@media screen and (max-width: 400px) {
-  .text-animation {
-    height: 235px;
-  }
-}
-.text-animation span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  text-transform: uppercase;
-  letter-spacing: 5px;
 }
 
 body {
@@ -73,7 +10,27 @@ body {
   font-family: 'lato light 300', sans-serif;
   color: #333;
   background-color: #f2f5ea;
-  /* background-color: #fef2ec; */
+}
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header and Navigation Bar Sizing and Styling */
+header {
+  background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 0px;
 }
 
 nav {
@@ -82,16 +39,12 @@ nav {
   -webkit-box-shadow: none;
 }
 
-a {
-  text-decoration: none;
-  /* color: #225ca3; */
-  font-weight: bold;
-  transition: color 0.1s;
-  /* margin: 8px; */
-}
-
-a:hover {
-  color: #5c6d70;
+.valign-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .navtitle {
@@ -108,8 +61,81 @@ a:hover {
   font-size: 20px;
   color: #f4d0d0;
   text-shadow: #333 0px 0px 5px;
-  /* padding-left: 5px;
-  padding-right: 5px; */
+}
+
+/* Main body styling and sizing */
+main {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: "lato light 300", serif;
+}
+
+/* Hero styling and sizing for the landing page */
+.hero {
+  height: 100vh;
+  background: url(../pantry.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "abril-fatface regular 400", serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: rgb(242, 178, 234) 0px 0px 2px;
+}
+
+.one, .two, .three, .four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#paragraph {
+  font-family: "abril-fatface regular 400", serif;
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: capitalize;
+}
+
+.text-animation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 800;
+  color: rgb(157, 34, 99);
+  width: 100vw;
+  height: 275px;
+  text-align: center;
+  line-height: normal;
+  background: rgba(204, 204, 204, 0.7);
+}
+
+.text-animation span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* Text styling and colors for different text */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: #5c6d70;
 }
 
 h4 {
@@ -117,10 +143,12 @@ h4 {
   color: #63032e;
 }
 
+/* Text sizing for the 'My Pantry' back link */
 .bck {
   font-size: 18px;
 }
 
+/* Styling and sizing for the different buttons */
 .btn {
   font-family: "abril-fatface", serif;
   background-color: #a36387;
@@ -129,9 +157,21 @@ h4 {
   padding: 0 12px;
 }
 
-.login-form,
-.signup-form {
-  padding: 2% 4%;
+.btn-no-style {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f4d0d0;
+  text-shadow: #333 0px 0px 5px;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #5c6d70;
 }
 
 .btn:hover {
@@ -151,9 +191,45 @@ button:hover {
   background-color: #5c6d70;
 }
 
+/* Padding to make the pages cohesive looking */
+section,
+.login-form,
+.signup-form,
+.single-post,
+.delete-post {
+  padding: 2% 4%;
+}
+
 .post-list {
   margin: 0;
   padding: 2% 4%;
+}
+
+.pantry-posts {
+  padding-left: 13px;
+}
+
+.post {
+  line-height: 150%;
+}
+
+.post-user, .recipe-info {
+  margin-bottom: 2%;
+}
+
+/* Create Recipe Form/Post styling and sizing */
+form div {
+  width: 50%;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  color: #5c6d70;
 }
 
 textarea,
@@ -174,86 +250,9 @@ textarea {
   min-height: 100px;
 }
 
-form > div {
-  margin-bottom: 2%;
-}
-
-form label {
-  display: block;
-  font-size: 14px;
-  color: #5c6d70;
-}
-
-form div {
-  width: 50%;
-}
-
-.page {
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  margin-bottom: 0px;
-}
-
-header {
-  background-image: linear-gradient(to bottom right, #4c002b, #a36387, #4c002b);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
-  width: 100%;
-}
-
-main {
-  flex: 1;
-  /* padding: 2% 4%; */
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  /* display: flex; */
-  font-family: "lato light 300", serif;
-}
-
-.single-post {
-  padding: 2% 4%;
-}
-
-section {
-  padding: 2% 4%;
-}
-
-.btn-no-style {
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  color: #f4d0d0;
-  text-shadow: #333 0px 0px 5px;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color 0.1s;
-}
-
-.btn-no-style:hover {
-  background: none;
-  color: #5c6d70;
-}
-
-.post {
-  line-height: 150%;
-}
-
-.post-user {
-  margin-bottom: 2%;
-}
-
-.recipe-info {
-  margin-bottom: 2%;
+/* Post's display styling and sizing */
+.new-post-form input {
+  width: 300px;
 }
 
 .post-color {
@@ -272,19 +271,12 @@ section {
   color: rgb(51, 50, 50);
 }
 
-.edit-link {
+.delete-link {
   display: block;
   color: #0b8484;
 }
 
-.pantry-posts {
-  padding-left: 13px;
-}
-
-.delete-post {
-  padding: 2% 4%;
-}
-
+/* Post's comment styling and sizing */
 .comment {
   padding: 1%;
   margin-bottom: 1%;
@@ -300,14 +292,7 @@ section {
   opacity: 0.6;
 }
 
-.new-post-form input {
-  width: 300px;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
-}
-
+/* Footer styling and sizing */
 footer {
   font-family: "Libre Barcode 39 Text", cursive;
   border-top: 1px solid #ccc;
@@ -315,4 +300,51 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 200%;
+}
+
+/* All media queries */
+@media screen and (max-width: 400px) {
+  #paragraph {
+    font-size: 15px;
+  }
+  .text-animation {
+    height: 275px;
+    font-size: 46px;
+  }
+  header {
+    height: 200px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .navtitle {
+    font-size: 34px;
+  }
+  nav {
+    line-height: normal;
+  }
+  .navtabs, .btn-no-style {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  .navcontent {
+    display: flex;
+    align-items: center;
+  }
+  .valign-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  #paragraph {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #paragraph {
+    font-size: 15px;
+  }
 }
