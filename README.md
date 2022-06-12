@@ -75,7 +75,7 @@ For more information about this license go to: [MIT License](http://choosealicen
     - :mailbox_with_mail: email: cap8095@gmail.com
 - Amy Rawls
     - GitHub: [charliebear2000](https://github.com/charliebear2000)
-    - :mailbox_with_mail: email: amelia_rawls@ccpsnet.net
+    - :mailbox_with_mail: email: amelia_rawls@yahoo.com
 - Ashley Walker
     - GitHub: [lawalker4](https://github.com/lawalker4)
     - :mailbox_with_mail: email: lauraashleywalker4@gmail.com 
