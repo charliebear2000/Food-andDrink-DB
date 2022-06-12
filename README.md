@@ -59,7 +59,7 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ## Screenshot
 
-[CLick Here to Watch our Demo Video](./public/images/GIF%20Recipe%20Pantry.webm)
+[Click here to watch our Demo Video](./public/images/GIF%20Recipe%20Pantry.webm)
 
 ![Screenshot 1](./public/images/Screenshot%201.PNG)
 
